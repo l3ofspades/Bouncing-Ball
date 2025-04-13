@@ -13,8 +13,8 @@ function draw() {
   circle(x, 200, 150);
 
   
-  if (x > width) {
-    speed = -5;
+  if (x > width || x < 0) {
+    speed = speed * -1;
   }
   x = x + speed;
 }
